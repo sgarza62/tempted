@@ -8,4 +8,34 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.superseriouscompany.tempted.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/liveMosquito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/liveMosquitoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:maxHeight="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/live_mosquito"
+            android:onClick="squash"/>
+
+        <ImageView
+            android:id="@+id/deadMosquitoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dead_mosquito"
+            android:visibility="gone"/>
+    </RelativeLayout>
 </RelativeLayout>
